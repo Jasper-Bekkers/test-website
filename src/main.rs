@@ -3,6 +3,11 @@
 
 extern crate rocket;
 
+#[get("/")]
+fn index() -> &'static str {
+    "<h1>Test site</h1>"
+}
+
 fn main(){
-    rocket::ignite().mount("/", routes![index].launch());
+    rocket::ignite().mount("/", routes![index]).launch();
 }
