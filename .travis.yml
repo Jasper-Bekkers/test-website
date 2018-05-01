@@ -7,5 +7,5 @@ before_install:
 deploy:
   provider: gae
   keyfile: "~/secure.json"
-  project: test-website-202805
+  project: test-website
   skip_cleanup: true
